@@ -4,3 +4,8 @@
   <input type="submit" id="submit">
 </form>
   
+  
+<form method="post" action="/models/<%= @model.id %>">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="delete">
+</form>
